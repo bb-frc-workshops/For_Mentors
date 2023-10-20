@@ -210,3 +210,21 @@ Upon any instance of a rule violation, a FOUL or TECH FOUL will be assessed.
     * Red PRIMO INGREDIENT
     * Blue PRIMO INGREDIENT
     * Violation: FOUL per different GAME PIECE
+* Don't mess with the opponents' PIZZA SLICES: A ROBOT may not move a scored GAME PIECE from an opponent's PIZZA SLICE
+    * Violation: FOUL for each moved GAME PIECE
+
+## 5. ROBOT Construction Rules
+
+### 5.1 General ROBOT Design
+
+#### STARTING CONFIGURATION - No Overhang 
+
+In the STARTING CONFIGURATION (the physical configuration in which a ROBOT starts a MATCH), no part of the ROBOT shall extend outside the vertical projection of the FRAME PERIMETER.
+
+#### STARTING CONFIGURATION - Max Size
+
+In the STARTING CONFIGURATION, a ROBOT must fit within the infinitely tall volume bounded by an 18" x 18" square (similar in size to a COUNTER)
+
+#### ROBOT Extention Limit
+
+ROBOTS may not extend more than 12" beyond their FRAME PERIMETER
