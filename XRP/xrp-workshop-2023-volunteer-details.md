@@ -64,7 +64,7 @@ We are still working on this. If you see it, please call a head mentor over to c
     - Ensure you are using `Simulate Robot Code`
     - In the Simulator GUI, check that you are in `Teleoperated` mode
     - In the Simulator GUI, check that your Joystick is mapped to `Joystick[0]`. If it says `Unassigned`, drag and drop the Logitech/XBox controller from the `System Joysticks` on the left side of the screen
-    - In the Simulator GUI, verify that pressing buttons and moving joystick/gamepad axes do in fact light up in your `Joystick[0]` area. If not, try unplugging and switchign the game interface mode on the back of the controller from `X` to `D` (or vice versa). This switch changes the button/axis mapping for the controller
+    - In the Simulator GUI, verify that pressing buttons and moving joystick/gamepad axes do in fact light up in your `Joystick[0]` area. If not, try unplugging and switching the game interface mode on the back of the controller from `X` to `D` (or vice versa). This switch changes the button/axis mapping for the controller
     - Verify the code. Did you map the buttons correctly in code (most likely in `RobotContainer` or in a command file)? Did you make sure that the command is executed (either directly or via a defaultCommand)? If it is to run in a loop continuously, did you ensure that your command has an overridden `isFinished()` method returning false (like `ArcadeDrive`)?
     - Make sure you are using `XRPMotor` for your motors and not `Spark` or any "standard" motor controllers for the roboRIO
     - See point #1 again
