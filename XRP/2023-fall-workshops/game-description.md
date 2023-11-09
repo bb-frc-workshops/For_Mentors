@@ -47,7 +47,7 @@ The FIELD is populated with the following elements and areas:
 
 ### 2.3 PRIMO INGREDIENT Area
 
-The PRIMO INGREDIENT area is an elevated platform measuring 36" x 18" by 2" high. The platform is constructed of plywood/cardboard and is attached to the field.
+The PRIMO INGREDIENT area is an elevated platform measuring 36" x 12" by 2" high. The platform is constructed of plywood/cardboard and is attached to the field.
 
 ### 2.4 Game Pieces
 
