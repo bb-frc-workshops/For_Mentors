@@ -78,4 +78,27 @@ We are still working on this. If you see it, please call a head mentor over to c
     - If using the `setAngle()` method from the example, make sure to use values between 0 and 180 (degrees)
     - See point #1 again
 
+## FMS and Match Play
 
+When in "match play", all XRPs and controlling computers are connected to a Field Management System (FMS) network. By default, the FMS network name is `XRP-FMS-NET` with a password of `xrp-fms-network`. The actual FMS server is located at `192.168.0.2`, and all connected devices will be given an IP address in the range of `192.168.0.10 - 192.168.0.199`.
+
+Some configuration modifications will need to be made:
+
+In the `build.gradle` file, the following lines need to be added/replaced.
+```
+wpi.sim.envVar("HALSIMWS_HOST", "192.168.0.2")
+wpi.sim.envVar("HALSIMWS_URI", "/xrp-fms-blue2") // This should match whichever station you are assigned to
+wpi.sim.envVar("HALSIMWS_FILTERS", "DriverStation")
+wpi.sim.addWebsocketsClient().defaultEnabled = true
+
+//Sets the XRP Client Host
+wpi.sim.envVar("HALSIMXRP_HOST", "192.168.0.2")
+wpi.sim.addXRPClient().defaultEnabled = true
+```
+Note that the `HALSIMWS_URI` should match whichever driver station position you are assigned to. Valid options here are `/xrp-fms-blue1`, `/xrp-fms-blue2`, `/xrp-fms-red1` or `/xrp-fms-red2`.
+
+On the XRP, the WiFi set up should be configured so that:
+* You add the `XRP-FMS-NET` network (and password) to the network list
+* Switch the WiFi Mode to `STA` (instead of `AP`)
+
+When in match play and connected to the FMS, you should not need to manually switch between disabled, autonomous or teleop. Instead, the FMS will signal to your robot code and the XRP which mode it should be in. Additionally, in the "Driver Station" section of the simulation GUI, you should also see the assigned station reflected.
