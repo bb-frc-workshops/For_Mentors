@@ -101,4 +101,20 @@ On the XRP, the WiFi set up should be configured so that:
 * You add the `XRP-FMS-NET` network (and password) to the network list
 * Switch the WiFi Mode to `STA` (instead of `AP`)
 
+Your `network` section in the XRP configuration page should look like:
+```
+{
+    "network": {
+        "defaultAP": { ... }, // no change
+        "networkList": [
+            {
+                "ssid": "XRP-FMS-NET",
+                "password": "xrp-fms-network"
+            } //Any additional networks can also be listed here. You can basically edit the "Test Network" entry if you want 
+        ],
+        "mode": "STA"
+    }
+}
+```
+
 When in match play and connected to the FMS, you should not need to manually switch between disabled, autonomous or teleop. Instead, the FMS will signal to your robot code and the XRP which mode it should be in. Additionally, in the "Driver Station" section of the simulation GUI, you should also see the assigned station reflected.
