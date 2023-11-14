@@ -80,6 +80,10 @@ We are still working on this. If you see it, please call a head mentor over to c
 
 ## FMS and Match Play
 
+NOTE: Prior to Match Play, download and install a special firmware: https://github.com/bb-frc-workshops/For_Mentors/raw/main/XRP/2023-fall-workshops/xrp-wpilib-firmware-1.0.0-xrpparty.uf2
+
+This firmware will prevent automatically connecting to the FMS network unless the USER button is held down during XRP reboot. To boot into FMS Match Play more with the special firmware, hold the USER button down while pressing the RESET button. Hold the USER button down until after the green LED starts flashing (preferably, wait for the flashing to stop before releasing the USER button).
+
 When in "match play", all XRPs and controlling computers are connected to a Field Management System (FMS) network. By default, the FMS network name is `XRP-FMS-NET` with a password of `xrp-fms-network`. The actual FMS server is located at `192.168.0.2`, and all connected devices will be given an IP address in the range of `192.168.0.10 - 192.168.0.199`.
 
 Some configuration modifications will need to be made:
