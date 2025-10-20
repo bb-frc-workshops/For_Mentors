@@ -94,19 +94,20 @@ We are still working on this. If you see it, please call a head mentor over to c
     - If using the `setAngle()` method from the example, make sure to use values between 0 and 180 (degrees)
     - See point #1 again
 6. **Robot delayed in moving**
-  - In firmware 2.1.0 and later, there is an option to set the AP channel. If too many robots are on one network channel, it can cause delays.
-  - Connect USB cable and reset.
-  - In any web browser, navigate to http://192.168.42.1:5000
-  - Update the "defaultAP" by adding a channel field like below. Default is 1 so choose 6 or 11 (other non-overlapping channels).
-  - Save the configuration in the web API
-  - Reset the XRP and confirm that the channel was set in xrp-status.txt
-  - Example:
-  ```
-  "network": {
-    "defaultAP": {
-        "ssid": "XRP-c259-6dad",
-        "password": "xrp-wpilib",
-        "channel": 6
-   ....
-   ```
+    - In firmware 2.1.0 and later, there is an option to set the AP channel. If too many robots are on one network channel, it can cause delays.
+    - Connect USB cable and reset.
+    - In any web browser, navigate to http://192.168.42.1:5000
+    - Update the "defaultAP" by adding a channel field like below. Default is 1 so choose 6 or 11 (other non-overlapping channels).
+    - Save the configuration in the web API
+    - Reset the XRP and confirm that the channel was set in xrp-status.txt
+    - Example:
+        ```        
+        "network": {    
+        "defaultAP": {
+            "ssid": "XRP-c259-6dad",
+            "password": "xrp-wpilib",
+            "channel": 6
+        ....
+        ```
   
+
