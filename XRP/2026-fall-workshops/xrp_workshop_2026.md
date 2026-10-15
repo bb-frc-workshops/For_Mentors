@@ -3,11 +3,11 @@
 Thank you for helping us support growing the interest and knowledge of our younger generation in STEM. For the XRP Workshop, your main duties will be helping the kids/teams with their programming (Java based). Below is some information that should help guide you through that process. If you are ever in doubt, please reach out to one of the head mentors (Zhiquan Yeo or Joe Pokorny) and they can provide next steps.
 
 # 2026 Game
-The game we will be playing is called Iron Acres. You can watch a video here [https://www.youtube.com/watch?v=vl8pXUBFGzw](https://www.youtube.com/watch?v=vl8pXUBFGzw). This game has a few basic tasks: move objects to their designated storage area, lift and place objects on various heights, and precisely navigate the field. Each task has different points awarded based on difficulty. The team with the most points at the end of the match wins.
+The game we will be playing is called Iron Acres. You can watch a video here [https://www.youtube.com/watch?v=EggSf5Uj0ts](https://www.youtube.com/watch?v=EggSf5Uj0ts). This game has a few basic tasks: move objects to their designated storage area, lift and place objects on various heights, and precisely navigate the field. Each task has different points awarded based on difficulty. The team with the most points at the end of the match wins.
 
 ## Get to know the hardware
 
-We are using the [XRP (Experiential Robotics Platform)](https://www.sparkfun.com/products/22230). This comes with a chassis, wheels, roller balls, drivetrain motors (and encoders for them), one servo motor with arm, color sensor, range finder, and a raspberry pi pico W microcontroller. We will also supply 4 AA Batteries and a usb cord to connect to the laptop (for robot program uploading).
+We are using the [XRP (Experiential Robotics Platform)](https://www.sparkfun.com/experiential-robotics-platform-xrp-kit.html). This comes with a chassis, wheels, roller balls, drivetrain motors (and encoders for them), one servo motor with arm, color sensor, range finder, and a raspberry pi pico W microcontroller. We will also supply 4 AA Batteries and a usb cord to connect to the laptop (for robot program uploading).
 
 ## Steps for setting up and connecting the XRP
 
@@ -32,15 +32,8 @@ Verify connnected by navigating to http://192.168.42.1:5000 in any web browser. 
 
 We will be using Java and a style called command-based programming, see here:
 https://docs.wpilib.org/en/2022/docs/software/commandbased/index.html
-The XRPReference example is in this style already and we plan to build upon it.
 
-There are several classes in WPILib that you can leverage. You can find the documentation on them here:
-https://first.wpi.edu/wpilib/allwpilib/docs/release/java/edu/wpi/first/wpilibj/package-summary.html
-
-And the complete list here:
-https://first.wpi.edu/wpilib/allwpilib/docs/release/java/index.html
-
-Note, because the XRP has limited hardware capabilities, we have special classes for our motors (XRPMotor) and servos (XRPServo).
+The XRPReference example is in this style already and we plan to build upon it. Note, because the XRP has limited hardware capabilities, we have special classes for our motors (XRPMotor) and servos (XRPServo).
 
 Our suggestion is to leverage the example (XRPReference documented steps to obtain it here https://docs.wpilib.org/en/latest/docs/xrp-robot/programming-xrp.html) as a starting point. 
 
